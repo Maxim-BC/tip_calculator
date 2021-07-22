@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto Condensed", sans-serif;
+}
+#root {
+  width: 520px;
+}
+h1 {
+  color: #ffdc40;
+  margin: 0px 60px 42px 60px;
+  padding-top: 34px;
+  font-size: 52px;
+}
+
+.main-window {
+  background-color: #360160;
+  width: 500px;
+  height: 800px;
+  margin: 85px 503px 85px 102px;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+}
+.main-content {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.box-btn {
+  margin-top: 30px;
+}
+
+.btn-calc,
+.btn-clear {
+  font-family: Roboto Condensed;
+  cursor: pointer;
+  font-size: 19px;
+  width: 180px;
+  height: 60px;
+  border-radius: 15px;
+}
+
+.btn-calc {
+  margin-right: 20px;
+  background: #ffdc40;
+}
+.btn-clear {
+  color: white;
+  background: #7c7a7a;
+}
+
+input {
+  width: 320px;
+  height: 50px;
+  font-size: 22px;
+  padding: 0 30px 0 30px;
+}
+
+select {
+  width: 385px;
+  height: 55px;
+  font-size: 22px;
+  padding: 0 30px 0 30px;
+}
+
+.box-tips,
+.box-total {
+  width: 385px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 25px;
+  display: flex;
+}
+
+.comments-two,
+.comments-one {
+  height: 20px;
+  margin: 0px;
+  color: #b6b6b6;
+  font-size: 18px;
+  width: 112px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.comments-two {
+  margin-bottom: 30px;
+}
+
+.text-tips,
+.text-total {
+  font-size: 25px;
+}
+
+.text-total {
+  margin-top: 0px;
+}
