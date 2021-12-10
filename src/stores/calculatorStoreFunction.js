@@ -1,6 +1,5 @@
 import { makeObservable, observable, action, computed } from "mobx";
 
-
 export function calculatorStoreFunction() {
   return makeObservable(
     {
@@ -10,9 +9,11 @@ export function calculatorStoreFunction() {
       tips: "___",
       totalSum: "___",
 
+      // get color( ){return }
+
       invoiceAmountChange(e) {
         e.preventDefault();
-        console.log(e.target.value)
+        console.log(e.target.value);
         this.invoiceAmount = e.target.value;
       },
       qualityServiceChange(e) {
