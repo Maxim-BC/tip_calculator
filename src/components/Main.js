@@ -30,10 +30,10 @@ const Main = observer(props=> {
           <option value="" disabled>
             Качество обслуживания
           </option>
-          <option value="0">Плохое (0%)</option>
-          <option value="5">Нормальное (5%)</option>
-          <option value="10">Хорошее (10%)</option>
-          <option value="15">Отличное (15%)</option>
+          <option value="0">&#128545;Плохое (0%)</option>
+          <option value="5">&#128528;Нормальное (5%)</option>
+          <option value="10">&#128578;Хорошее (10%)</option>
+          <option value="15">&#128525;Отличное (15%)</option>
         </select>
       </label>
       <p>Количество человек</p>
