@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import Header from "./Header";
-import Main from "./Main";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
 class App extends Component {
   state = {
-    curInput: ""
+    curInput: "",
   };
 
   render() {
     return (
+
       <div className="main-window">
         <Header />
         <Main />
