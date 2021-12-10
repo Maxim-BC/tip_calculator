@@ -1,11 +1,11 @@
 import React from "react";
 import { observer } from "mobx-react";
+// import { runInAction } from "mobx";
 import { calculatorStoreFunction } from "../stores";
 
 const store = calculatorStoreFunction();
 
-const Main = observer(props=> {
- 
+const Main = observer((props) => {
   return (
     <form className="main-content" onSubmit={store.handleSubmit}>
       <p>Сумма по счету</p>
@@ -21,7 +21,8 @@ const Main = observer(props=> {
       </label>
       <p>Качество обслуживания</p>
       <label>
-        <select
+        <select 
+        // style={{color:store.color}}
           defaultValue=""
           onChange={store.qualityServiceChange}
           value={store.qualityService}
@@ -30,10 +31,10 @@ const Main = observer(props=> {
           <option value="" disabled>
             Качество обслуживания
           </option>
-          <option value="0">&#128545;Плохое (0%)</option>
-          <option value="5">&#128528;Нормальное (5%)</option>
-          <option value="10">&#128578;Хорошее (10%)</option>
-          <option value="15">&#128525;Отличное (15%)</option>
+          <option value="0">&#128545; Плохое (0%)</option>
+          <option value="5">&#128528; Нормальное (5%)</option>
+          <option value="10">&#128578; Хорошее (10%)</option>
+          <option value="15">&#128525; Отличное (15%)</option>
         </select>
       </label>
       <p>Количество человек</p>
@@ -68,4 +69,4 @@ const Main = observer(props=> {
   );
 });
 
-export default Main
+export default Main;
